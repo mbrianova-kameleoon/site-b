@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site B - Kameleoon Onboarding</title>
+    <style>
+      :root {
+        --bg: #1e293b;
+        --panel: #0f1720;
+        --text: #f3f4f6;
+        --muted: #b7c0cc;
+        --accent: #f97316;
+        --accent-2: #ffb56b;
+        --border: rgba(249, 115, 22, 0.28);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 48px 20px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      }
+
+      main {
+        max-width: 920px;
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-left: 6px solid var(--accent);
+        border-radius: 12px;
+        padding: 26px 24px;
+        text-align: left;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 30px;
+      }
+
+      .description {
+        margin: 0 0 18px;
+        max-width: 510px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      img {
+        display: block;
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+      }
+
+      .actions {
+        margin-top: 18px;
+      }
+
+      button {
+        appearance: none;
+        background: transparent;
+        color: var(--accent-2);
+        border: 1px solid var(--accent);
+        padding: 12px 16px;
+        border-radius: 10px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: rgba(249, 115, 22, 0.08);
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      button:focus-visible {
+        outline: 3px solid rgba(249, 115, 22, 0.28);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Kameleoon Onboarding - Site B</h1>
+      <div class="description">
+        <p>
+          This is a description text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <img src="https://picsum.photos/400/300" alt="Random placeholder image" />
+      <div class="actions">
+        <button type="button">Call to Action</button>
+      </div>
+    </main>
+  </body>
+</html>
